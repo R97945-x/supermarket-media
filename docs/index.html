@@ -164,19 +164,23 @@
                 <label>内容类型</label>
                 <select id="cw-type" onchange="toggleCwFields()"></select>
               </div>
+              <div class="form-group">
+                <label>文案风格</label>
+                <select id="cw-style"></select>
+              </div>
               <div class="form-group cw-field" data-types="product,tour,promotion,member,newarrival,recipe">
                 <label>商品名称</label>
                 <input type="text" id="cw-product" placeholder="如：进口车厘子">
               </div>
-              <div class="form-group cw-field" data-types="product,recipe,newarrival,tips,promotion">
-                <label>卖点/特点</label>
-                <input type="text" id="cw-features" placeholder="如：又大又甜，产地直发">
+              <div class="form-group cw-field" data-types="product,recipe,newarrival,tips,promotion,behind,knowledge,interaction">
+                <label>卖点/内容描述</label>
+                <input type="text" id="cw-features" placeholder="如：又大又甜 / 拍补货过程">
               </div>
               <div class="form-group cw-field" data-types="product,recipe,newarrival">
-                <label>价格</label>
-                <input type="text" id="cw-price" placeholder="如：29.9">
+                <label>价格（选填）</label>
+                <input type="text" id="cw-price" placeholder="不强调价格可不填">
               </div>
-              <div class="form-group cw-field" data-types="tour,promotion,member">
+              <div class="form-group cw-field" data-types="tour,promotion,member,behind,greeting">
                 <label>超市名称</label>
                 <input type="text" id="cw-store" placeholder="如：永辉超市">
               </div>
@@ -200,15 +204,15 @@
                 <label>结束时间</label>
                 <input type="date" id="cw-end">
               </div>
-              <div class="form-group cw-field" data-types="tips">
-                <label>品类</label>
-                <input type="text" id="cw-category" placeholder="如：水果">
+              <div class="form-group cw-field" data-types="tips,knowledge,interaction">
+                <label>品类/主题</label>
+                <input type="text" id="cw-category" placeholder="如：水果 / 蔬菜保存">
               </div>
               <div class="form-group cw-field" data-types="member">
                 <label>福利内容</label>
                 <input type="text" id="cw-benefit" placeholder="如：双倍积分">
               </div>
-              <div class="form-group cw-field" data-types="festival">
+              <div class="form-group cw-field" data-types="festival,greeting">
                 <label>节日名称</label>
                 <input type="text" id="cw-festival" placeholder="如：中秋节">
               </div>
